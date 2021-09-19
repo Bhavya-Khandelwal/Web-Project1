@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list {
+    width: 70%;
+    /* background-color: rgb(8, 7, 8); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list li {}
+
+.nav-list li a {
+    text-decoration: none;
+    padding: 23px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+.right-nav {
+    /* background-color: burlywood; */
+    width: 30%;
+    text-align: right;
+    padding: 23px;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 120px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../img/buildings.png.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstsection {
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.first-half {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.second-half {
+    width: 40%;
+}
+
+.second-half img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+    margin-left: 77px;
+}
+
+.text-big {
+    font-size: 41px;
+    text-align: center;
+}
+
+.text-small {
+    font-size: 18px;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 8px 4px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    background: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-sm {
+    padding: 7px 5px;
+    vertical-align: middle;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.secRight {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.thumbanail img {
+    width: 250px;
+    margin: 22px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 64px;
+}
+
+.left {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+
+.sectionTag {
+    padding: 12px 0;
+}
+
+.contact {
+    background-color: rgb(224, 219, 219);
+    height: 820px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 48px;
+}
+
+.text-center {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.form {
+    max-width: 62%;
+    margin: 25px auto;
+}
+
+.form-input {
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin: 14px 0;
+    padding: 5px 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-dark {
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 10px;
+    margin-top: 2px;
+}
+
+footer {
+    background-color: rgb(15, 14, 14);
+    color: rgb(240, 231, 231);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width:1140px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        height: 450px;
+        transition: all 0.1s ease-in-out;
+    }
+    .right-nav {
+        text-align: center;
+    }
+    #search {
+        width: 100%;
+    }
+    .burger {
+        display: block;
+    }
+    .h-nav {
+        height: 72px;
+    }
+    .v-class {
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+}
